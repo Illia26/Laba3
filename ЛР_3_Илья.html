@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lb3</title>
+<style type="text/css">
+body{
+	background: #ffe6ac;
+}
+	div#pos1 {
+	position:absolute;
+	top: 100px;
+	left: 50px;
+	}
+	div#pos2 {
+	position:absolute;
+	top: 100px;
+	left: 250px;
+	}
+	div#pos3 {
+	position:absolute;
+	top: 100px;
+	left: 450px;
+	}
+	div#pos4 {
+	position:absolute;
+	top: 100px;
+	left: 650px;
+	}
+	div#pos5 {
+	position:absolute;
+	top: 250px;
+	left: 50px;
+	}
+	div#pos6 {
+	position:absolute;
+	top: 250px;
+	left: 250px;
+	}
+	div#pos7 {
+	position:absolute;
+	top: 250px;
+	left: 450px;
+	}
+	div#pos8 {
+	position:absolute;
+	top: 250px;
+	left: 650px;
+	}
+	div#pos0 {
+	position:absolute;
+	top: 400px;
+	left: 400px;
+	}
+</style>
+
+</head>
+<body>
+	
+<h1 align="center">Лабораторная работа № 3</h1>
+<h2 align="center">Наволоков И.В.</h2>
+<script type="text/javascript" defer>
+function getRandomInt() {
+    return Math.floor(Math.random() * (6 - 1)) + 1;
+  }
+function graduate() {
+	var exc = 0;
+	var good = 0;
+	var und = 0;
+	var _name0grades = [5,5,5,5,5];
+	var _name1grades = [4,5,5,5,4];
+	var _name2grades = [0,0,0,0,0];
+	var _name3grades = [0,0,0,0,0];
+	var _name4grades = [0,0,0,0,0];
+	var _name5grades = [0,0,0,0,0];
+	var _name6grades = [0,0,0,0,0];
+	var _name7grades = [0,0,0,0,0];
+	var _name0 = document.getElementById('Txt0').value;
+	var _name1 = document.getElementById('Txt1').value;
+	var _name2 = document.getElementById('Txt2').value;
+	var _name3 = document.getElementById('Txt3').value;
+	var _name4 = document.getElementById('Txt4').value;
+	var _name5 = document.getElementById('Txt5').value;
+	var _name6 = document.getElementById('Txt6').value;
+	var _name7 = document.getElementById('Txt7').value;
+	
+	for (var i = 0; i < 5; i++) {
+		_name2grades[i] = getRandomInt();
+	}
+	for (var i = 0; i < 5; i++) {
+		_name3grades[i] = getRandomInt();
+	}
+	for (var i = 0; i < 5; i++) {
+		_name4grades[i] = getRandomInt();
+	}
+	for (var i = 0; i < 5; i++) {
+		_name5grades[i] = getRandomInt();
+	}
+	for (var i = 0; i < 5; i++) {
+		_name6grades[i] = getRandomInt();
+	}
+	for (var i = 0; i < 5; i++) {
+		_name7grades[i] = getRandomInt();
+	}
+
+	document.write('Отличники:'+"<BR>");
+	if ((_name0grades[0]==5) && (_name0grades[1]==5) && (_name0grades[2]==5) && (_name0grades[3]==5) && (_name0grades[4]==5)) {
+		exc++;
+		document.write(_name0+"<BR>");
+	}
+	if ((_name1grades[0]==5) && (_name1grades[1]==5) && (_name1grades[2]==5) && (_name1grades[3]==5) && (_name1grades[4]==5)) {
+		exc++;
+		document.write(_name1+"<BR>");
+	}
+	if ((_name2grades[0]==5) && (_name2grades[1]==5) && (_name2grades[2]==5) && (_name2grades[3]==5) && (_name2grades[4]==5)) {
+		exc++;
+		document.write(_name2+"<BR>");
+	}
+
+	if ((_name3grades[0]==5) && (_name3grades[1]==5) && (_name3grades[2]==5) && (_name3grades[3]==5) && (_name3grades[4]==5)) {
+		exc++;
+		document.write(_name3+"<BR>");
+	}
+	if ((_name4grades[0]==5) && (_name4grades[1]==5) && (_name4grades[2]==5) && (_name4grades[3]==5) && (_name4grades[4]==5)) {
+		exc++;
+		document.write(_name4+"<BR>");
+	}
+	if ((_name5grades[0]==5) && (_name5grades[1]==5) && (_name5grades[2]==5) && (_name5grades[3]==5) && (_name5grades[4]==5)) {
+		exc++;
+		document.write(_name5+"<BR>");
+	}
+	if ((_name6grades[0]==5) && (_name6grades[1]==5) && (_name6grades[2]==5) && (_name6grades[3]==5) && (_name6grades[4]==5)) {
+		exc++;
+		document.write(_name6+"<BR>");
+	}
+	if ((_name7grades[0]==5) && (_name7grades[1]==5) && (_name7grades[2]==5) && (_name7grades[3]==5) && (_name7grades[4]==5)) {
+		exc++;
+		document.write(_name7+"<BR>");
+	}
+	document.write('Количество отличников: '+exc+"<BR>");
+	
+	document.write("<BR>"+'Хорошисты:'+"<BR>");
+	if ((_name0grades[0]>3) && (_name0grades[1]>3) && (_name0grades[2]>3) && (_name0grades[3]>3) && (_name0grades[4]>3)) {
+		if ((_name0grades[0]!=5) || (_name0grades[1]!=5) || (_name0grades[2]!=5) || (_name0grades[3]!=5) || (_name0grades[4]!=5)) {
+		good++;
+		document.write(_name0+"<BR>");
+	}
+	}
+	if ((_name1grades[0]>3) && (_name1grades[1]>3) && (_name1grades[2]>3) && (_name1grades[3]>3) && (_name1grades[4]>3)) {
+		if ((_name1grades[0]!=5) || (_name1grades[1]!=5) || (_name1grades[2]!=5) || (_name1grades[3]!=5) || (_name1grades[4]!=5)) {
+		good++;
+		document.write(_name1+"<BR>");
+	}
+	}
+	if ((_name2grades[0]>3) && (_name2grades[1]>3) && (_name2grades[2]>3) && (_name2grades[3]>3) && (_name2grades[4]>3)) {
+		if ((_name2grades[0]!=5) || (_name2grades[1]!=5) || (_name2grades[2]!=5) || (_name2grades[3]!=5) || (_name2grades[4]!=5)) {
+		good++;
+		document.write(_name2+"<BR>");
+	}
+	}
+	if ((_name3grades[0]>3) && (_name3grades[1]>3) && (_name3grades[2]>3) && (_name3grades[3]>3) && (_name3grades[4]>3)) {
+		if ((_name3grades[0]!=5) || (_name3grades[1]!=5) || (_name3grades[2]!=5) || (_name3grades[3]!=5) || (_name3grades[4]!=5)) {
+		good++;
+		document.write(_name3+"<BR>");
+	}
+	}
+	if ((_name4grades[0]>3) && (_name4grades[1]>3) && (_name4grades[2]>3) && (_name4grades[3]>3) && (_name4grades[4]>3)) {
+		if ((_name4grades[0]!=5) || (_name4grades[1]!=5) || (_name4grades[2]!=5) || (_name4grades[3]!=5) || (_name4grades[4]!=5)) {
+		good++;
+		document.write(_name4+"<BR>");
+	}
+	}
+	if ((_name5grades[0]>3) && (_name5grades[1]>3) && (_name5grades[2]>3) && (_name5grades[3]>3) && (_name5grades[4]>3)) {
+		if ((_name5grades[0]!=5) || (_name5grades[1]!=5) || (_name5grades[2]!=5) || (_name5grades[3]!=5) || (_name5grades[4]!=5)) {
+		good++;
+		document.write(_name5+"<BR>");
+	}
+	}
+	if ((_name6grades[0]>3) && (_name6grades[1]>3) && (_name6grades[2]>3) && (_name6grades[3]>3) && (_name6grades[4]>3)) {
+		if ((_name6grades[0]!=5) || (_name6grades[1]!=5) || (_name6grades[2]!=5) || (_name6grades[3]!=5) || (_name6grades[4]!=5)) {
+		good++;
+		document.write(_name6+"<BR>");
+	}
+	}
+	if ((_name7grades[0]>3) && (_name7grades[1]>3) && (_name7grades[2]>3) && (_name7grades[3]>3) && (_name7grades[4]>3)) {
+		if ((_name7grades[0]!=5) || (_name7grades[1]!=5) || (_name7grades[2]!=5) || (_name7grades[3]!=5) || (_name7grades[4]!=5)) {
+		good++;
+		document.write(_name7+"<BR>");
+	}
+	}
+	document.write('Количество хорошистов: '+good+"<BR>");
+
+	document.write("<BR>"+'Неуспевающие:'+"<BR>");
+	if ((_name0grades[0]==2) || (_name0grades[1]==2) || (_name0grades[2]==2) || (_name0grades[3]==2) || (_name0grades[4]==2)) {
+		und++;
+		document.write(_name0+"<BR>");
+	}
+	if ((_name1grades[0]==2) || (_name1grades[1]==2) || (_name1grades[2]==2) || (_name1grades[3]==2) || (_name1grades[4]==2)) {
+		und++;
+		document.write(_name1+"<BR>");
+	}
+	if ((_name2grades[0]==2) || (_name2grades[1]==2) || (_name2grades[2]==2) || (_name2grades[3]==2) || (_name2grades[4]==2)) {
+		und++;
+		document.write(_name2+"<BR>");
+	}
+	if ((_name3grades[0]==2) || (_name3grades[1]==2) || (_name3grades[2]==2) || (_name3grades[3]==2) || (_name3grades[4]==2)) {
+		und++;
+		document.write(_name3+"<BR>");
+	}
+	if ((_name4grades[0]==2) || (_name4grades[1]==2) || (_name4grades[2]==2) || (_name4grades[3]==2) || (_name4grades[4]==2)) {
+		und++;
+		document.write(_name4+"<BR>");
+	}
+	if ((_name5grades[0]==2) || (_name5grades[1]==2) || (_name5grades[2]==2) || (_name5grades[3]==2) || (_name5grades[4]==2)) {
+		und++;
+		document.write(_name5+"<BR>");
+	}
+	if ((_name6grades[0]==2) || (_name6grades[1]==2) || (_name6grades[2]==2) || (_name6grades[3]==2) || (_name6grades[4]==2)) {
+		und++;
+		document.write(_name6+"<BR>");
+	}
+	if ((_name7grades[0]==2) || (_name7grades[1]==2) || (_name7grades[2]==2) || (_name7grades[3]==2) || (_name7grades[4]==2)) {
+		und++;
+		document.write(_name7+"<BR>");
+	}
+	document.write('Количество неуспевающих: '+und+"<BR>");
+	
+	
+}
+
+</script>
+<div id="pos1">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №1" id="Txt0"></p>
+</form>
+</div>
+<div id="pos2">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №2" id="Txt1"></p>
+</form>
+</div>
+<div id="pos3">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №3" id="Txt2"></p>
+</form>
+</div>
+<div id="pos4">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №4" id="Txt3"></p>
+</form>
+</div>
+<div id="pos5">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №5" id="Txt4"></p>
+</form>
+</div>
+<div id="pos6">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №6" id="Txt5"></p>
+</form>
+</div>
+<div id="pos7">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №7" id="Txt6"></p>
+</form>
+</div>
+<div id="pos8">
+<form>
+   <p>Введите фамилию студента:</p>
+   <p><input name="_name" value="Студент №8" id="Txt7"></p>
+</form>
+</div>
+<div id="pos0">
+<form onsubmit="graduate()">
+   <p><input type="submit" value="Отправить отчетность"></p>
+</form>
+</div>
+
+
+</body>
+</html>
